@@ -23,9 +23,9 @@ class Classroom(commands.Cog):
         else: channel_exist = False
         
         if role_exist and channel_exist: return True
-        elif role_exist = False and channel_exist = False: 'role_and_channel_not_exist'
-        elif role_exist = False: return 'role_not_exist'
-        elif channel_exist = False: return 'channel_not_exist'
+        elif role_exist == False and channel_exist == False: return 'role_and_channel_not_exist'
+        elif role_exist == False: return 'role_not_exist'
+        elif channel_exist == False: return 'channel_not_exist'
 
     @commands.command(name='classroom', pass_context=True)
     @commands.has_role('Teacher')
